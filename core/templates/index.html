@@ -1,0 +1,193 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'index.css'%}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{%static 'apple-touch-icon.png'%}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{%static 'favicon-32x32.png'%}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{%static 'favicon-16x16.png'%}">
+        <link rel="manifest" href="{%static 'site.webmanifest'%}">
+    </head>
+    <body>
+
+        <div class="hero">
+            <nav>
+                <a href="/"><h2 class="logo">B<span>K</span></h2></a>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#cont">Contact Us</a></li>
+                </ul>
+                
+            </nav>
+
+            <div class="content">
+                <h4>Hello, my name is </h4>
+                <h1>Badmus <span>Kolade</span></h1>
+                <h3>I am a Full Stack Engineer</h3>
+                <div class="newsletter">
+                    <form>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email">
+                        <input type="submit" name="submit" value="Lets start"
+                    </form>
+                </div>
+                <a href="{% static 'resume.pdf' %}"><div class="resume"><h3> My Resume &nbsp <i class="fa-solid fa-file-pdf"></i></h3> </div></a>
+            </div>
+
+        </div>
+        
+        
+        
+    <section id="about" class="about">
+        <div class="main">
+            <img src="https://dummyimage.com/400x500.png?text=picture%20of%20a%20man">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Full Stack Developer </h5>
+                <p>Cillum eu eu cillum nulla excepteur in culpa. Lorem ut tempor consectetur est exercitation non occaecat cillum esse ipsum enim duis ut deserunt. Occaecat duis est laboris nostrud velit elit tempor cillum officia eu amet minim magna nisi. Irure officia id velit et reprehenderit. Reprehenderit non mollit esse minim exercitation d
+                    Proident ipsum exercitation sunt id commodo non non. Anim Lorem eiusmod adipisicing aliquip nisi.</p>
+                <button type="button">Let's Talk</button>
+            </div>
+        </div>
+        </section>
+
+    <div class="service">
+        <div class="title">
+            <h2>Our Services</h2>
+        </div>
+        <div class="box">
+            <div class="card"> 
+                <i class="fa-solid fa-bars"></i>
+                    <h5>Web development</h5>
+                    <div class="pra">
+                        <p>Bring your online vision to life with our professional web development services, delivering stunning and effective websites that drive results.</p>
+                    <p style="text-align: center;">
+                        <!-- <a class="button" href="#">Read More</a> -->
+                    </p>
+                </div>
+            </div>
+                <div class="card"> 
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h5>Backend Engineering</h5>
+                    <div class="pra">
+                        <p>Power up your website and applications with our reliable backend engineering services, expertly designed to optimize performance and scalability.</p>
+                    <p style="text-align: center;">
+                        <!-- <a class="button" href="#">Read More</a> -->
+                    </p>
+                </div>
+                </div>
+                <div class="card"> 
+                    <i class="fa-regular fa-bell"></i>
+                    <h5>Consultation</h5>
+                    <div class="pra">
+                        <p>Unlock your full potential with our expert consultation services and achieve your goals today!</p>
+                    <p style="text-align: center;">
+                        <!-- <a class="button" href="#">Read More</a> -->
+                    </p>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- skills -->
+    <div id="skills" class="ski-title"><h2> Skills</h2></div>
+    <div class="ski">
+        
+    <div  class="skills">
+        <div class="skill">
+            <div class="skill-name">Python &nbsp <i class="fa-brands fa-python"></i></div>
+            <div class="skill-bar">
+                <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">JavaScript &nbsp <i class="fa-brands fa-js"></i></div>
+            <div class="skill-bar">
+                <div class="skill-per" per="70%" style="max-width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">C</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="40%" style="max-width: 40%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">Django</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+            </div>
+        </div>
+        
+        <div class="skill">
+            <div class="skill-name">HTML &nbsp <i class="fa-brands fa-html5"></i></div>
+            <div class="skill-bar">
+                <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">CSS &nbsp <i class="fa-brands fa-css3-alt"></i></div>
+            <div class="skill-bar">
+                <div class="skill-per" per="70%" style="max-width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">SOLIDITY</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="30%" style="max-width: 30%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">REACT &nbsp <i class="fa-brands fa-react"></i></div>
+            <div class="skill-bar">
+                <div class="skill-per" per="50%" style="max-width: 50%;"></div>
+            </div>
+
+        </div>
+        
+       
+        
+
+    </div>
+    
+</div>
+
+    <!-- contact me -->
+
+<div id="cont" class="contact-me">
+    <p>Book a meeting with me directly</p>
+    <a class="button-two" href="https://calendly.com/badmuskolade/30min" target="_blank" rel="noopener noreferrer">Book</a>
+
+    
+    <a class="button-two" href="mailto:leodarkseid@gmail.com ?subject=Hi Kolade &body= " target="_blank" rel="noopener noreferrer">Mail me</a>
+</div>
+
+<footer>
+    <p> Badmus Kolade</p>
+    <p>For more html and css and coding tutorial - please click on th elink below</p>
+    <div class="social">
+        
+        <a href="https://www.linkedin.com/in/badmuskolade" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://t.me/leodarkseid" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://discordapp.com/users/770896443560427530" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://www.github.com/leodarkseid" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.twitter.com/leodarkseid" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i> </a>
+    </div>
+</footer>
+
+
+    
+</body>
+</html>
