@@ -13,7 +13,10 @@
     height: 50px;
     border-radius: 30px;
     text-align: center;
-    padding-top: 7px;
+    padding-top: 10px;
+    color: white;
+    font-size: 22px;
+    vertical-align: middle;
     
 }
 .resume:hover{
@@ -417,3 +420,89 @@ footer p:nth-child(2){
         width:100%;
     }
 }
+
+@media (max-width:584px) {
+ 
+    nav ul li a{
+        display: none;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-text{
+        width: 70%;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-text h2{
+        margin-top: 30px;
+        color: white;
+        font-size: 45px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about-text h5{
+        color: white;
+        letter-spacing: 2px;
+        font-size: 20px;
+        margin-bottom: 25px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    
+    .box{
+        flex-direction: column;
+    }
+    .title{
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    
+    .title h2{
+        font-size: 45px;
+        text-align: center;
+        margin: 0;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .service{
+        padding: 50px;
+    }
+    .skills{
+        padding: 30px;
+    }
+    .ski-title h2{
+        font-size: 30px;
+    }
+    .ski{
+        padding-top: 0px;
+        background: rgb(25, 30, 42);
+        min-height: auto;
+        height: auto;
+    }
+    .skill-name{
+        font-size:16px ;
+    }
+    
+    h1{
+        font-size: 50px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .resume{
+        font-size: 18px;
+        width: 200px;
+        height: 40px;
+    }
+  }
