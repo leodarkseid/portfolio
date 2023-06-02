@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-<title>Performing Maintenance</title>
-<style type="text/css">
-      body { text-align: center; padding: 150px; }
-      h1 { font-size: 40px; }
-      body { font: 20px Helvetica, sans-serif; color: #333; }
-      #article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-      a { color: #dc8100; text-decoration: none; }
-      a:hover { color: #333; text-decoration: none; }
-    </style>
-</head>
-<body>
-<div id="article">
-<h1>Site is getting a little tune up and some love.</h1>
-<div>
-<p>I apologize for the inconvenience, but we're performing some maintenance. You can still contact us at <a href="mailto:leodarkseid@gmail.com">leodarkseid@gmail.com</a>. We'll be back up soon!</p>
-<p>— Thanks !</p>
-</div>
-</div>
-</html>
-
-<!-- {% load static %}
+{% load static %}
 
 <!DOCTYPE html>
 
@@ -39,165 +15,182 @@
         <link rel="icon" type="image/png" sizes="32x32" href="{%static 'favicon-32x32.png'%}">
         <link rel="icon" type="image/png" sizes="16x16" href="{%static 'favicon-16x16.png'%}">
         <link rel="manifest" href="{%static 'site.webmanifest'%}">
+
+        <style type="text/css">
+      body { text-align: center; padding: 150px; }
+      h1 { font-size: 40px; }
+      body { font: 20px Helvetica, sans-serif; color: #333; }
+      #article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+      a { color: #dc8100; text-decoration: none; }
+      a:hover { color: #333; text-decoration: none; }
+    </style>
         
     </head>
     <body>
+<div id="article">
+<h1>Our site is getting a little tune up and some love.</h1>
+<div>
+<p>We apologize for the inconvenience, but we're performing some maintenance. You can still contact us at <a href="mailto:admin@codingislove.com">admin@codingislove.com</a>. We'll be back up soon!</p>
+<p>— Coding is Love</p>
+</div>
+</div>
+#     <body>
 
-        <div class="hero">
-            <nav>
-                <a href="/"><h2 class="logo">B<span>K</span></h2></a>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#cont">Contact Me</a></li>
-                </ul>
+#         <div class="hero">
+#             <nav>
+#                 <a href="/"><h2 class="logo">B<span>K</span></h2></a>
+#                 <ul>
+#                     <li><a href="/">Home</a></li>
+#                     <li><a href="#about">About Me</a></li>
+#                     <li><a href="#services">Services</a></li>
+#                     <li><a href="#skills">Skills</a></li>
+#                     <li><a href="#cont">Contact Me</a></li>
+#                 </ul>
                 
-            </nav>
+#             </nav>
 
-            <div class="content">
-                <h4>Hello, My name is </h4>
-                <h1>Badmus <span>Kolade</span></h1>
-                <h3>Full Stack Developer, Business Development <br> & Growth Manager, and Ex-Medic</h3>
-                <div class="newsletter">
-                    <form>
-                        <input type="email" name="email" id="email" placeholder="Enter your Email">
-                        <input type="submit" name="submit" value="Lets start"
-                    </form>
-                </div>
-                <a href="{% static 'LEO_BADMUS_KOLADE_Resume.pdf' %}"><div class="resume"> My Resume &nbsp <i class="fa-solid fa-file-pdf"></i> </div></a>
-            </div>
+#             <div class="content">
+#                 <h4>Hello, My name is </h4>
+#                 <h1>Badmus <span>Kolade</span></h1>
+#                 <h3>Full Stack Developer, Business Development <br> & Growth Manager, and Ex-Medic</h3>
+#                 <div class="newsletter">
+#                     <form>
+#                         <input type="email" name="email" id="email" placeholder="Enter your Email">
+#                         <input type="submit" name="submit" value="Lets start"
+#                     </form>
+#                 </div>
+#                 <a href="{% static 'LEO_BADMUS_KOLADE_Resume.pdf' %}"><div class="resume"> My Resume &nbsp <i class="fa-solid fa-file-pdf"></i> </div></a>
+#             </div>
 
-        </div>
+#         </div>
         
         
         
-    <section id="about" class="about">
-        <div class="main">
-            <img src="{% static 'kolade.jpg'%}", alt="hero">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <h5>Full Stack Developer </h5>
-                <p> I am a highly skilled software developer with experience in Python, Django, HTML, JavaScript, C and AWS. I have contributed to the development of several SAAS products and I am passionate about creating impactful experiences for users and clients. In addition to my technical skills, I have a strong background in business development, growth and operations management. I have demonstrated leadership in brand development, marketing strategy, and partnerships, resulting in significant increases in relevant business metric. I also have experience in cardiac physiology and media, adding depth and diversity to my profile. I am known for my excellent communication, problem-solving, and teamwork skills and I am a resourceful self-starter with the ability to work independently. I am currently pursuing a postgraduate diploma in computer science and I hold a bachelor's degree in Human Physiology.</p>
-                <a href="#cont"><button type="button">Let's Talk</button></a>
-            </div>
-        </div>
-        </section>
+#     <section id="about" class="about">
+#         <div class="main">
+#             <img src="{% static 'kolade.jpg'%}", alt="hero">
+#             <div class="about-text">
+#                 <h2>About Me</h2>
+#                 <h5>Full Stack Developer </h5>
+#                 <p> I am a highly skilled software developer with experience in Python, Django, HTML, JavaScript, C and AWS. I have contributed to the development of several SAAS products and I am passionate about creating impactful experiences for users and clients. In addition to my technical skills, I have a strong background in business development, growth and operations management. I have demonstrated leadership in brand development, marketing strategy, and partnerships, resulting in significant increases in relevant business metric. I also have experience in cardiac physiology and media, adding depth and diversity to my profile. I am known for my excellent communication, problem-solving, and teamwork skills and I am a resourceful self-starter with the ability to work independently. I am currently pursuing a postgraduate diploma in computer science and I hold a bachelor's degree in Human Physiology.</p>
+#                 <a href="#cont"><button type="button">Let's Talk</button></a>
+#             </div>
+#         </div>
+#         </section>
 
-    <div id="services" class="service">
-        <div class="title">
-            <h2>Services</h2>
-        </div>
-        <div class="box">
-            <div class="card"> 
-                <i class="fa-solid fa-bars"></i>
-                    <h5>Web development</h5>
-                    <div class="pra">
-                        <p>Bring your online vision to life with our professional web development services, delivering stunning and effective websites that drive results.</p>
-                    <p style="text-align: center;">
-                        <!-- <a class="button" href="#">Read More</a> -->
-                    </p>
-                </div>
-            </div>
-                <div class="card"> 
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                    <h5>Backend Engineering</h5>
-                    <div class="pra">
-                        <p>Power up your website and applications with our reliable backend engineering services, expertly designed to optimize performance and scalability.</p>
-                    <p style="text-align: center;">
-                        <!-- <a class="button" href="#">Read More</a> -->
-                    </p>
-                </div>
-                </div>
-                <div class="card"> 
-                    <i class="fa-regular fa-bell"></i>
-                    <h5>Consultation</h5>
-                    <div class="pra">
-                        <p>Unlock your full potential with our expert consultation services and achieve your goals today!</p>
-                    <p style="text-align: center;">
-                        <!-- <a class="button" href="#">Read More</a> -->
-                    </p>
-                </div> 
-            </div>
-        </div>
-    </div>
+#     <div id="services" class="service">
+#         <div class="title">
+#             <h2>Services</h2>
+#         </div>
+#         <div class="box">
+#             <div class="card"> 
+#                 <i class="fa-solid fa-bars"></i>
+#                     <h5>Web development</h5>
+#                     <div class="pra">
+#                         <p>Bring your online vision to life with our professional web development services, delivering stunning and effective websites that drive results.</p>
+#                     <p style="text-align: center;">
+#                         <!-- <a class="button" href="#">Read More</a> -->
+#                     </p>
+#                 </div>
+#             </div>
+#                 <div class="card"> 
+#                     <i class="fa-solid fa-screwdriver-wrench"></i>
+#                     <h5>Backend Engineering</h5>
+#                     <div class="pra">
+#                         <p>Power up your website and applications with our reliable backend engineering services, expertly designed to optimize performance and scalability.</p>
+#                     <p style="text-align: center;">
+#                         <!-- <a class="button" href="#">Read More</a> -->
+#                     </p>
+#                 </div>
+#                 </div>
+#                 <div class="card"> 
+#                     <i class="fa-regular fa-bell"></i>
+#                     <h5>Consultation</h5>
+#                     <div class="pra">
+#                         <p>Unlock your full potential with our expert consultation services and achieve your goals today!</p>
+#                     <p style="text-align: center;">
+#                         <!-- <a class="button" href="#">Read More</a> -->
+#                     </p>
+#                 </div> 
+#             </div>
+#         </div>
+#     </div>
 
-    <!-- skills -->
-    <div id="skills" class="ski-title"><h2> Skills</h2></div>
-    <div class="ski">
+#     <!-- skills -->
+#     <div id="skills" class="ski-title"><h2> Skills</h2></div>
+#     <div class="ski">
         
-    <div  class="skills">
-        <div class="skill">
-            <div class="skill-name">Python &nbsp <i class="fa-brands fa-python"></i></div>
-            <div class="skill-bar">
-                <div class="skill-per" per="90%" style="max-width: 90%;"></div>
-            </div>
-        </div>
+#     <div  class="skills">
+#         <div class="skill">
+#             <div class="skill-name">Python &nbsp <i class="fa-brands fa-python"></i></div>
+#             <div class="skill-bar">
+#                 <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+#             </div>
+#         </div>
 
-        <div class="skill">
-            <div class="skill-name">JavaScript &nbsp <i class="fa-brands fa-js"></i></div>
-            <div class="skill-bar">
-                <div class="skill-per" per="70%" style="max-width: 70%;"></div>
-            </div>
-        </div>
+#         <div class="skill">
+#             <div class="skill-name">JavaScript &nbsp <i class="fa-brands fa-js"></i></div>
+#             <div class="skill-bar">
+#                 <div class="skill-per" per="70%" style="max-width: 70%;"></div>
+#             </div>
+#         </div>
 
-        <div class="skill">
-            <div class="skill-name">C</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="40%" style="max-width: 40%;"></div>
-            </div>
-        </div>
+#         <div class="skill">
+#             <div class="skill-name">C</div>
+#             <div class="skill-bar">
+#                 <div class="skill-per" per="40%" style="max-width: 40%;"></div>
+#             </div>
+#         </div>
 
-        <div class="skill">
-            <div class="skill-name">Django</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="90%" style="max-width: 90%;"></div>
-            </div>
-        </div>
+#         <div class="skill">
+#             <div class="skill-name">Django</div>
+#             <div class="skill-bar">
+#                 <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+#             </div>
+#         </div>
         
-        <div class="skill">
-            <div class="skill-name">HTML &nbsp <i class="fa-brands fa-html5"></i></div>
-            <div class="skill-bar">
-                <div class="skill-per" per="90%" style="max-width: 90%;"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name">CSS &nbsp <i class="fa-brands fa-css3-alt"></i></div>
-            <div class="skill-bar">
-                <div class="skill-per" per="70%" style="max-width: 70%;"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name">SOLIDITY</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="30%" style="max-width: 30%;"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name">REACT &nbsp <i class="fa-brands fa-react"></i></div>
-            <div class="skill-bar">
-                <div class="skill-per" per="50%" style="max-width: 50%;"></div>
-            </div>
+#         <div class="skill">
+#             <div class="skill-name">HTML &nbsp <i class="fa-brands fa-html5"></i></div>
+#             <div class="skill-bar">
+#                 <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+#             </div>
+#         </div>
+#         <div class="skill">
+#             <div class="skill-name">CSS &nbsp <i class="fa-brands fa-css3-alt"></i></div>
+#             <div class="skill-bar">
+#                 <div class="skill-per" per="70%" style="max-width: 70%;"></div>
+#             </div>
+#         </div>
+#         <div class="skill">
+#             <div class="skill-name">SOLIDITY</div>
+#             <div class="skill-bar">
+#                 <div class="skill-per" per="30%" style="max-width: 30%;"></div>
+#             </div>
+#         </div>
+#         <div class="skill">
+#             <div class="skill-name">REACT &nbsp <i class="fa-brands fa-react"></i></div>
+#             <div class="skill-bar">
+#                 <div class="skill-per" per="50%" style="max-width: 50%;"></div>
+#             </div>
 
-        </div>
+#         </div>
         
        
         
 
-    </div>
+#     </div>
     
-</div>
+# </div>
 
-    <!-- contact me -->
+#     <!-- contact me -->
 
-<div id="cont" class="contact-me">
-    <p>Book a meeting with me directly</p>
-    <a class="button-two" href="https://calendly.com/badmuskolade/30min" target="_blank" rel="noopener noreferrer">Book</a>
+# <div id="cont" class="contact-me">
+#     <p>Book a meeting with me directly</p>
+#     <a class="button-two" href="https://calendly.com/badmuskolade/30min" target="_blank" rel="noopener noreferrer">Book</a>
 
     
-    <a class="button-two" href="mailto:leodarkseid@gmail.com ?subject=Hi Kolade &body= " target="_blank" rel="noopener noreferrer">Mail me</a>
-</div>
+#     <a class="button-two" href="mailto:leodarkseid@gmail.com ?subject=Hi Kolade &body= " target="_blank" rel="noopener noreferrer">Mail me</a>
+# </div>
 
 <footer>
     
@@ -216,4 +209,4 @@
 
     
 </body>
-</html> -->
+</html>
