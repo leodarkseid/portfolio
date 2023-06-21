@@ -16,7 +16,8 @@ header{
 .header__name-background{
     background: var(--color-primary);
     max-width: 50%;
-    height: 37%;
+    min-height: 47%;
+    height: 47%;
     top: 0;
     padding-top: 7rem;
     border-radius: 0 0 7rem 7rem;
