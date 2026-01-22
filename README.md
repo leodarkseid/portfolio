@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+# Portfolio Website - Badmus Kolade
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A minimal, modern portfolio website showcasing software engineering expertise, built with React.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **SEO Optimized**: Comprehensive meta tags, Open Graph support, structured data (JSON-LD)
+- **Accessible**: WCAG AA compliant with keyboard navigation, ARIA labels, and screen reader support
+- **Responsive**: Mobile-first design with optimized layouts for all screen sizes
+- **Modern Form Handling**: Web3Forms integration for contact form (no backend needed)
+- **Performance**: Optimized bundle size and loading times
+- **PWA Ready**: Manifest and service worker support for installability
 
-### `npm start`
+## 📋 Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js (v14 or higher)
+- npm or yarn
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔧 Installation
 
-### `npm test`
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd portfolio
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+```bash
+npm install
+```
 
-### `npm run build`
+3. **Set up Web3Forms**:
+   - Visit [Web3Forms](https://web3forms.com/)
+   - Sign up for a free account
+   - Get your Access Key
+   - Open `src/components/contact/Contact.jsx`
+   - Replace `YOUR_WEB3FORMS_ACCESS_KEY_HERE` with your actual key (line 42)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🏃 Running the Application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Development Mode
+```bash
+npm start
+```
+Runs the app at [http://localhost:3000](http://localhost:3000)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Production Build
+```bash
+npm run build
+```
+Creates an optimized production build in the `build` folder.
 
-### `npm run eject`
+### Run Tests
+```bash
+npm test
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎨 Customization
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Update Personal Information
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Meta Tags**: Edit `public/index.html` to update:
+   - Title and description
+   - Social media links in structured data
+   - Domain URLs
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Content**: Update these files:
+   - `src/components/header/Header.jsx` - Name and title
+   - `src/components/about/About.jsx` - Bio and experience
+   - `src/components/contact/Contact.jsx` - Contact details
 
-## Learn More
+3. **Colors**: Modify CSS variables in `src/index.css`:
+   ```css
+   :root {
+     --color-bg: #F5F5F5;
+     --color-bg-variant: #BE375f;
+     --color-primary: #ED8554;
+   }
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ♿ Accessibility Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Keyboard Navigation**: Full site navigation using Tab, Arrow keys, Enter, and Space
+- **Skip Links**: Quick navigation to main content
+- **ARIA Labels**: Proper labeling for screen readers
+- **Focus Indicators**: Visible focus states for all interactive elements
+- **Reduced Motion**: Respects user's motion preferences
 
-### Code Splitting
+## 📱 Responsive Breakpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Desktop: > 1024px
+- Tablet: 600px - 1024px  
+- Mobile: < 600px
 
-### Analyzing the Bundle Size
+## 🔒 Security
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- No sensitive API keys in client code (Web3Forms key is safe for client-side use)
+- Honeypot spam protection in contact form
+- CORS-compliant form submissions
 
-### Making a Progressive Web App
+## 📦 Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Main dependencies:
+- React 18.3.1
+- React Icons 4.12.0
+- Swiper 9.4.1
+- Web Vitals 3.5.2
 
-### Advanced Configuration
+## 🌐 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The site can be deployed to any static hosting service:
 
-### Deployment
+- **Vercel**: `vercel --prod`
+- **Netlify**: Drag & drop the `build` folder
+- **GitHub Pages**: Use `gh-pages` package
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Remember to:
+1. Update all URLs in `public/index.html` with your domain
+2. Add your Web3Forms access key
+3. Test the contact form after deployment
 
-### `npm run build` fails to minify
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+All rights reserved © Badmus Kolade
+
+## 🤝 Contact
+
+- Email: leodarkseid@gmail.com
+- Telegram: [@leodarkseid](https://t.me/leodarkseid)
+- Discord: [@leodarkseid](https://discordapp.com/users/770896443560427530)
+
+---
+
+Built with ❤️ using React
