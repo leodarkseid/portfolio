@@ -52,12 +52,12 @@
     }
     </script>
 
-    <link rel="stylesheet" href="css/style.css?v=9">
+    <link rel="stylesheet" href="css/style.css?v=10">
     <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
 
 <body>
-
+    <!-- SVG Symbols -->
     <svg style="display: none;">
         <symbol id="icon-focus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
@@ -89,345 +89,272 @@
         </symbol>
     </svg>
 
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">Badmus Kolade</a>
 
-    <nav role="navigation" aria-label="Main navigation">
-        <a href="#personal" class="active" title="Personal" aria-label="Personal">
-            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-        </a>
-        <a href="#focus" title="Current Focus" aria-label="Current Focus">
-            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-focus"></use>
-            </svg>
-        </a>
-        <a href="#offclock" title="Off The Clock" aria-label="Off The Clock">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" height="1em" width="1em"
-                xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-coffee"></use>
-            </svg>
-        </a>
-        <a href="#activity" title="Activity" aria-label="Activity">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
-                xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-activity"></use>
-            </svg>
-        </a>
-        <a href="#contact" title="Contact" aria-label="Contact">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z">
-                </path>
-                <path
-                    d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z">
-                </path>
-            </svg>
-        </a>
-    </nav>
-
-    <section id="about" role="main">
-
-
-        <div id="personal" class="about__page about__hero-page">
-            <div class="container">
-                <div class="hero__profile-image">
-                    <img src="assets/kolade.jpg" alt="Badmus Kolade">
+            <nav class="nav">
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#focus" class="nav__link">Focus</a></li>
+                        <li class="nav__item"><a href="#interests" class="nav__link">Interests</a></li>
+                        <li class="nav__item"><a href="#activity" class="nav__link">Activity</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                    <div class="nav__close" id="nav-close">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </div>
                 </div>
-                <h1 class="about__name">Badmus Kolade</h1>
-                <p class="about__title">Computer Scientist | Software Engineer</p>
+            </nav>
 
-                <div class="hero__about">
-                    <p class="hero__text">
-                        I started in Human Physiology, fascinated by biological systems.
-                        Now, I engineer distributed digital systems.
-                    </p>
-                    <p class="hero__text">
-                        I have spent the last 5+ years building scalable architecture.
-                        Currently, I am exploring the intersection of the two: Artificial Intelligence and Agentic
-                        Systems.
-                    </p>
-                </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </div>
         </div>
+    </header>
 
+    <main class="main">
+        <!-- HOME / HERO -->
+        <section class="home section" id="home">
+            <div class="container home__container grid">
+                <div class="home__content">
+                    <h1 class="home__title">Badmus Kolade</h1>
+                    <h2 class="home__subtitle">Senior Backend Engineer</h2>
+                    <p class="home__description">
+                        Computer Scientist turned Software Engineer.
+                        I transitioned from Human Physiology to engineering distributed digital systems.
+                        Currently exploring the intersection of scalable architecture and Agentic AI.
+                    </p>
+                    <a href="#contact" class="button button--flex">
+                        Let's Talk
+                        <svg class="button__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
 
-        <div id="focus" class="about__page about__focus-page">
-            <div class="container">
-                <div class="page__header">
-                    <div class="page__icon">
-                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
-                            stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em"
-                            xmlns="http://www.w3.org/2000/svg">
+                <div class="home__img-wrapper">
+                    <img src="assets/kolade.jpg" alt="Badmus Kolade" class="home__img">
+                </div>
+
+                <!-- Socials embedded in Hero for easy access -->
+                <div class="home__social">
+                    <a href="https://github.com/leodarkseid" target="_blank" class="home__social-icon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/badmuskolade" target="_blank" class="home__social-icon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                    </a>
+                    <a href="https://x.com/iamleo007" target="_blank" class="home__social-icon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOCUS -->
+        <section class="section" id="focus">
+            <h2 class="section__title">Current Focus</h2>
+            <span class="section__subtitle">What I'm working on</span>
+
+            <div class="container focus__container grid">
+                <div class="focus__card">
+                    <div class="focus__icon">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
                             <use href="#icon-focus"></use>
                         </svg>
                     </div>
-                    <h2 class="page__title">Current Focus</h2>
+                    <h3 class="focus__title">AI Agents</h3>
+                    <p class="focus__description">Researching the design and utilization of Small language models (SLM) for domain specific use cases.</p>
                 </div>
-                <div class="focus__grid">
-                    <div class="focus__card">
-                        <h3>AI Agents</h3>
-                        <p>Researching the design and utilization of Small language models (SLM) for domain specific use
-                            cases.</p>
-                    </div>
-                    <div class="focus__card">
-                        <h3>P2P Infrastructure</h3>
-                        <p>Architecting decentralized peer-to-peer protocols.</p>
-                        <span class="status-badge">Research Phase</span>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-
-        <div id="offclock" class="about__page about__offclock-page">
-            <div class="container">
-                <div class="page__header">
-                    <div class="page__icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" height="1em"
-                            width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <use href="#icon-heart"></use>
+                <div class="focus__card">
+                    <div class="focus__icon">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                         </svg>
                     </div>
-                    <h2 class="page__title">Off The Clock</h2>
+                    <h3 class="focus__title">P2P Infrastructure</h3>
+                    <p class="focus__description">Architecting decentralized peer-to-peer protocols.</p>
+                    <span class="focus__badge">Research Phase</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- OFF THE CLOCK / INTERESTS -->
+        <section class="section" id="interests">
+            <h2 class="section__title">Off The Clock</h2>
+            <span class="section__subtitle">Books, Music, and Life</span>
+
+            <div class="container interests__container">
+
+                <!-- Reading -->
+                <div class="interests__group">
+                    <h3 class="interests__category-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" height="1em" width="1em"><use href="#icon-library"></use></svg>
+                        Reading
+                    </h3>
+                    <div class="interests__stack">
+                        <div class="interests__item">
+                            <a href="https://en.wikipedia.org/wiki/Americanah" target="_blank" rel="noopener">
+                                <img src="https://covers.openlibrary.org/b/id/8474037-L.jpg" alt="Americanah" loading="lazy">
+                                <div class="interests__overlay">Americanah</div>
+                            </a>
+                        </div>
+                        <div class="interests__item">
+                            <a href="https://en.wikipedia.org/wiki/Zero_to_One" target="_blank" rel="noopener">
+                                <img src="https://covers.openlibrary.org/b/id/9002334-L.jpg" alt="Zero to One" loading="lazy">
+                                <div class="interests__overlay">Zero to One</div>
+                            </a>
+                        </div>
+                        <div class="interests__item">
+                            <a href="https://en.wikipedia.org/wiki/Nineteen_Eighty-Four" target="_blank" rel="noopener">
+                                <img src="https://covers.openlibrary.org/b/id/7222246-L.jpg" alt="1984" loading="lazy">
+                                <div class="interests__overlay">1984</div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="offclock__grid">
-
-                    <div class="offclock__section offclock__reading">
-                        <div class="offclock__section-header">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" height="1em"
-                                width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <use href="#icon-library"></use>
-                            </svg>
-                            <h3>Reading</h3>
-                        </div>
-                        <div class="offclock__stack">
-
-                            <div class="offclock__item">
-                                <a href="https://en.wikipedia.org/wiki/Americanah" target="_blank" rel="noopener">
-                                    <img src="https://covers.openlibrary.org/b/id/8474037-L.jpg" alt="Americanah"
-                                        loading="lazy">
-                                    <div class="offclock__overlay">Americanah</div>
-                                </a>
-                            </div>
-                            <div class="offclock__item">
-                                <a href="https://en.wikipedia.org/wiki/Zero_to_One" target="_blank" rel="noopener">
-                                    <img src="https://covers.openlibrary.org/b/id/9002334-L.jpg" alt="Zero to One"
-                                        loading="lazy">
-                                    <div class="offclock__overlay">Zero to One</div>
-                                </a>
-                            </div>
-                            <div class="offclock__item">
-                                <a href="https://en.wikipedia.org/wiki/Zero_to_One" target="_blank" rel="noopener">
-                                    <img src="https://covers.openlibrary.org/b/id/9002334-L.jpg" alt="Zero to One"
-                                        loading="lazy">
-                                    <div class="offclock__overlay">Zero to One</div>
-                                </a>
-                            </div>
-                            <div class="offclock__item">
-                                <a href="https://en.wikipedia.org/wiki/Nineteen_Eighty-Four" target="_blank"
-                                    rel="noopener">
-                                    <img src="https://covers.openlibrary.org/b/id/7222246-L.jpg" alt="1984"
-                                        loading="lazy">
-                                    <div class="offclock__overlay">1984</div>
-                                </a>
-                            </div>
-                        </div>
+                <!-- Listening -->
+                <div class="interests__group">
+                    <h3 class="interests__category-title">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"><path d="M386.4 32H168c-13.3 0-24 10.7-24 24v261.6c-13-6-27.9-9.6-44-9.6-46.4 0-84 37.6-84 84s37.6 84 84 84 84-37.6 84-84V136h192v194.5c-11.8-5.3-25.1-8.5-39-8.5-53 0-96 43-96 96s43 96 96 96 96-43 96-96V56c0-13.3-10.7-24-24-24z"></path></svg>
+                        Listening
+                    </h3>
+                    <div id="spotify-stack" class="interests__stack interests__stack--circle">
+                        <!-- Populated by JavaScript -->
                     </div>
+                </div>
 
-
-                    <div class="offclock__section offclock__listening">
-                        <div class="offclock__section-header">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
-                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M386.4 32H168c-13.3 0-24 10.7-24 24v261.6c-13-6-27.9-9.6-44-9.6-46.4 0-84 37.6-84 84s37.6 84 84 84 84-37.6 84-84V136h192v194.5c-11.8-5.3-25.1-8.5-39-8.5-53 0-96 43-96 96s43 96 96 96 96-43 96-96V56c0-13.3-10.7-24-24-24z">
-                                </path>
-                            </svg>
-                            <h3>Listening</h3>
+                <!-- Favorites -->
+                <div class="interests__favorites grid">
+                     <a href="https://en.wikipedia.org/wiki/The_Office_(American_TV_series)" target="_blank" rel="noopener" class="favorite__card favorite__card--tv">
+                        <div class="favorite__icon">
+                            <img src="assets/the-office-black.png" alt="The Office" loading="lazy">
                         </div>
-                        <div id="spotify-stack" class="offclock__stack offclock__stack--circle">
-                            <!-- Populated by JavaScript -->
+                        <div class="favorite__content">
+                            <span class="favorite__label">Best Show Ever</span>
+                            <h4>The Office</h4>
+                            <p>"That's what she said."</p>
                         </div>
-                    </div>
+                    </a>
 
+                    <a href="https://www.barcelona.com" target="_blank" rel="noopener" class="favorite__card favorite__card--football">
+                        <div class="favorite__icon">
+                            <img src="assets/barcelona.png" alt="FC Barcelona" loading="lazy">
+                        </div>
+                        <div class="favorite__content">
+                            <span class="favorite__label">Força Barça</span>
+                            <h4>FC Barcelona</h4>
+                            <p>Més que un club</p>
+                        </div>
+                    </a>
+                </div>
 
-                    <div class="offclock__favorites">
-                        <a href="https://en.wikipedia.org/wiki/The_Office_(American_TV_series)" target="_blank"
-                            rel="noopener" class="favorite__card favorite__card--tv">
-                            <div class="favorite__icon favorite__icon--img">
-                                <img src="assets/the-office-black.png" alt="The Office" loading="lazy">
-                            </div>
-                            <div class="favorite__content">
-                                <span class="favorite__label">Best Show Ever</span>
-                                <h4>The Office</h4>
-                                <p>"That's what she said." — Michael Scott</p>
-                            </div>
-                        </a>
+            </div>
+        </section>
 
-                        <a href="https://www.barcelona.com" target="_blank" rel="noopener"
-                            class="favorite__card favorite__card--football">
-                            <div class="favorite__icon favorite__icon--img">
-                                <img src="assets/barcelona.png" alt="FC Barcelona" loading="lazy">
-                            </div>
-                            <div class="favorite__content">
-                                <span class="favorite__label">Força Barça</span>
-                                <h4>FC Barcelona</h4>
-                                <p>Més que un club</p>
-                            </div>
-                        </a>
+        <!-- ACTIVITY -->
+        <section class="section" id="activity">
+            <h2 class="section__title">Activity</h2>
+            <span class="section__subtitle">Upcoming Events</span>
+
+            <div class="container activity__container">
+                <div class="activity__card">
+                    <div class="activity__label">Training For</div>
+                    <h3 class="activity__event">Lagos City Marathon</h3>
+                    <div class="activity__meta">
+                        <div id="countdown" class="activity__countdown">Loading...</div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+        <!-- CONTACT -->
+        <section class="section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Let's Build Something Together</span>
 
-        <div id="activity" class="about__page about__activity-page">
-            <div class="container">
-                <div class="page__header">
-                    <div class="page__icon">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
-                            width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <use href="#icon-activity"></use>
-                        </svg>
-                    </div>
-                    <h2 class="page__title">Activity</h2>
-                </div>
-                <div class="activity__content">
-                    <div class="activity__card">
-                        <div class="activity__label">Training</div>
-                        <h3 class="activity__event">Lagos City Marathon</h3>
-                        <div class="activity__meta">
-                            <div id="countdown" class="activity__countdown">Loading...</div>
-
+            <div class="container contact__container grid">
+                 <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                            </div>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">hello@badmuskolade.com</span>
+                            <a href="mailto:hello@badmuskolade.com" class="contact__button">Write me <svg class="contact__button-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                 </div>
 
+                 <div class="contact__content">
+                     <form class="contact__form">
+                        <input type="hidden" name="access_key" value="5f43c2dc-b1c5-4c25-8afb-a9e375812788">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-        <div id="contact" class="about__page about__cta-page">
-            <div class="container">
-                <div class="cta__content">
-                    <h2>Let's Build Something Together</h2>
-                    <p>Interested in collaborating? Let's talk.</p>
-                    <div class="cta__form-container">
-
-                        <form>
-
-                            <input type="hidden" name="access_key" value="5f43c2dc-b1c5-4c25-8afb-a9e375812788">
-
-
-                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-                            <input type="text" name="name" placeholder="Your Full Name" required
-                                aria-label="Your full name">
-                            <input type="email" name="email" placeholder="Your Email" required
-                                aria-label="Your email address">
-                            <textarea name="message" rows="7" placeholder="Your Message" required
-                                aria-label="Your message"></textarea>
-
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-
-
-                            <div class="form-message form-message--success" role="alert" style="display: none;">
-                                ✓ Message sent successfully! I'll get back to you soon.
-                            </div>
-                            <div class="form-message form-message--error" role="alert" style="display: none;">
-                                ✗ Something went wrong. Please try again.
-                            </div>
-                        </form>
-
-
-                        <div id="thank-you-message" style="display: none; text-align: center; padding: 2rem;">
-                            <h3 style="color: var(--color-primary); font-size: 1.5rem; margin-bottom: 1rem;">Thank You!
-                            </h3>
-                            <p style="font-size: 1.1rem; color: #333;">Your message has been sent successfully.</p>
-                            <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">I'll get back to you soon.
-                            </p>
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Name</label>
+                            <input type="text" name="name" placeholder="Insert your name" class="contact__form-input" required>
                         </div>
+
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Email</label>
+                            <input type="email" name="email" placeholder="Insert your email" class="contact__form-input" required>
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Message</label>
+                            <textarea name="message" cols="30" rows="10" placeholder="Write your message" class="contact__form-input" required></textarea>
+                        </div>
+
+                        <button type="submit" class="button button--flex">
+                            Send Message
+                            <svg class="button__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                        </button>
+
+                        <div class="form-message form-message--success" role="alert" style="display: none;">
+                            ✓ Message sent successfully!
+                        </div>
+                        <div class="form-message form-message--error" role="alert" style="display: none;">
+                            ✗ Something went wrong.
+                        </div>
+                     </form>
+
+                     <div id="thank-you-message" style="display: none; text-align: center; padding: 2rem;">
+                        <h3 style="color: var(--color-primary); font-size: 1.5rem; margin-bottom: 1rem;">Thank You!</h3>
+                        <p>Your message has been sent successfully.</p>
                     </div>
-                </div>
-
-
+                 </div>
             </div>
+        </section>
+    </main>
 
+    <footer class="footer">
+        <div class="container footer__container">
+            <h1 class="footer__title">Badmus Kolade</h1>
+            <ul class="footer__list">
+                <li><a href="#about" class="footer__link">About</a></li>
+                <li><a href="#focus" class="footer__link">Focus</a></li>
+                <li><a href="#interests" class="footer__link">Interests</a></li>
+            </ul>
 
-            <footer class="cta__footer">
-                <a href="https://www.youtube.com/watch?v=S_xH7noaqTA" target="_blank" rel="noopener"
-                    class="footer__logo" aria-label="Watch video">
-                    <img src="assets/logo.png" alt="Badmus Kolade logo">
+            <div class="footer__social">
+                <a href="https://x.com/iamleo007" target="_blank" class="footer__social-link">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
                 </a>
+                <a href="https://github.com/leodarkseid" target="_blank" class="footer__social-link">
+                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"></path></svg>
+                </a>
+                <a href="https://linkedin.com/in/badmuskolade" target="_blank" class="footer__social-link">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                </a>
+            </div>
 
-                <ul class="permalinks">
-                    <li><a href="#personal">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-
-                <div class="footer__socials">
-
-                    <a href="https://x.com/iamleo007" target="_blank" rel="noopener noreferrer" aria-label="X profile">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
-                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                            </path>
-                        </svg>
-                    </a>
-
-                    <a href="https://github.com/leodarkseid" target="_blank" rel="noopener noreferrer"
-                        aria-label="GitHub profile">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512"
-                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z">
-                            </path>
-                        </svg>
-                    </a>
-
-                    <a href="https://orcid.org/0009-0000-9534-6466" target="_blank" rel="noopener noreferrer"
-                        aria-label="ORCID profile">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
-                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M294.75 188.19h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.79 360.76h-29.84v-207.5h29.84zm-14.92-231.14a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1-19.57 19.57zM300 369h-81V161.26h80.6c76.73 0 110.44 54.83 110.44 103.85C410 318.39 368.38 369 300 369z">
-                            </path>
-                        </svg>
-                    </a>
-
-                    <a href="https://t.me/leodarkseid" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512"
-                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z">
-                            </path>
-                        </svg>
-                    </a>
-
-                    <a href="https://linkedin.com/in/badmuskolade" target="_blank" rel="noopener noreferrer"
-                        aria-label="LinkedIn profile">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
-                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="footer__copyright">
-                    <small> &copy; Badmus Kolade. All rights reserved </small>
-                </div>
-            </footer>
+            <span class="footer__copy">&#169; Badmus Kolade. All rights reserved</span>
         </div>
-
-    </section>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
