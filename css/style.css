@@ -835,6 +835,26 @@ footer a {
         font-size: 3.5rem;
     }
 
+    /* FIX CONTACT PAGE ON TABLETS (iPad Pro) - FULL BLEED */
+    #contact.about__page {
+        width: 100vw !important;
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        margin: 0 !important;
+        padding: 4rem 0 0 0 !important;
+        /* Keep top padding, remove sides */
+        overflow: visible !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Inner container padding for tablet */
+    #contact.about__page>.container {
+        padding: 0 2rem !important;
+        /* Restore side padding for content */
+        padding-bottom: 0 !important;
+    }
+
     .about__title {
         font-size: 1.35rem;
     }
@@ -1132,8 +1152,8 @@ button:disabled {
 
     /* OFF THE CLOCK COMPACT */
     .about__offclock-page {
-        padding: 4rem 1rem !important;
-        /* Reduce side padding to gain width */
+        padding: 2rem 1rem !important;
+        /* Reduce top padding to remove empty space */
     }
 
     .about__offclock-page .page__header {
@@ -1334,9 +1354,10 @@ button:disabled {
         margin: 0 !important;
         width: 100% !important;
         max-width: none !important;
-        min-height: auto !important;
-        /* Let content determine height */
-        justify-content: flex-start !important;
+        min-height: 100dvh !important;
+        /* Force full viewport height */
+        justify-content: center !important;
+        /* Center content vertically */
         box-sizing: border-box !important;
     }
 
