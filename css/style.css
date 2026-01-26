@@ -31,7 +31,6 @@
 }
 
 html {
-    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
@@ -111,8 +110,6 @@ section>h2 {
     color: var(--color-primary);
     margin-bottom: 3rem;
 }
-
-
 
 a {
     color: var(--color-primary);
@@ -233,19 +230,9 @@ nav a.active {
 /* Full Page Sections */
 /* Full Page Sections */
 .about__page {
-    height: 100dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem;
-    /* Compact padding */
+    padding: 6rem 0;
     position: relative;
     background: white;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08), 0 4px 20px rgba(0, 0, 0, 0.08);
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    overflow: hidden;
-    /* Prevent spillover */
 }
 
 .about__page .container {
@@ -261,6 +248,10 @@ nav a.active {
     padding: 5rem 2rem;
     align-items: center;
     /* Keep hero centered */
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero__profile-image {
@@ -394,6 +385,11 @@ nav a.active {
 /* Off The Clock Page */
 .about__offclock-page {
     padding: 3rem 2rem;
+    background-color: var(--color-bg);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .offclock__grid {
@@ -698,7 +694,7 @@ nav a.active {
     display: flex;
     flex-direction: column;
     padding: 5rem 0 0 0;
-    /* Remove horizontal padding, keep vertical */
+    min-height: 100dvh;
 }
 
 .cta__content {
@@ -729,6 +725,32 @@ nav a.active {
     text-align: left;
 }
 
+.about__cta-page input,
+.about__cta-page textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    /* Orange border */
+    resize: none;
+    color: var(--color-bg-variant);
+    /* Dark text */
+    margin-bottom: 1.2rem;
+}
+
+.about__cta-page input::placeholder,
+.about__cta-page textarea::placeholder {
+    color: var(--color-bg-variant);
+    opacity: 0.5;
+}
+
+.about__cta-page input:focus,
+.about__cta-page textarea:focus {
+    border-color: var(--color-bg-variant);
+    background: transparent;
+}
+
 .cta__footer {
     width: 100%;
     margin-top: auto;
@@ -745,12 +767,13 @@ nav a.active {
 footer {
     background: var(--color-primary);
     padding: 3rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
     font-size: 0.9rem;
 }
 
 footer a {
-    color: var(--color-bg);
+    color: var(--color-white);
 }
 
 .footer__logo {
@@ -998,6 +1021,31 @@ button:disabled {
 @media screen and (max-width: 600px) {
 
     /* FIT VIEWPORT LOGIC */
+    html {
+        background-color: var(--color-primary);
+        /* Mask bottom white space */
+    }
+
+    body {
+        background-color: var(--color-primary);
+        /* Match footer color to eliminate gaps */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Make #about section truly full-width on mobile */
+    #about {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: none !important;
+        background: transparent !important;
+    }
+
+    section {
+        margin: 0 !important;
+    }
+
     .about__page {
         padding: 4rem 1rem 1rem;
         /* Add top padding for nav */
@@ -1013,11 +1061,29 @@ button:disabled {
         min-height: 100dvh;
     }
 
-    /* Remove padding from Contact page specifically so Footer is full width */
+    /* Make entire Contact section (last page) FULL-BLEED on mobile */
     #contact.about__page {
-        padding: 0;
-        padding-top: 2rem;
-        /* Add top space */
+        width: 100vw !important;
+        position: relative !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        margin: 0 !important;
+        padding: 2rem 0 0 0 !important;
+        /* TOP only, NO SIDES, NO BOTTOM */
+        overflow: visible !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Add inner padding for form content only, not the footer */
+    #contact.about__page>.container {
+        padding: 0 1rem !important;
+        /* Sides only for form content */
+        padding-bottom: 0 !important;
+    }
+
+    /* Remove container padding at bottom of contact form */
+    #contact.about__page>.container {
+        padding-bottom: 0;
     }
 
     .container {
@@ -1071,25 +1137,38 @@ button:disabled {
     }
 
     .about__offclock-page .page__header {
-        margin-bottom: 2rem !important;
-        /* Standardize header spacing */
+        margin-bottom: 1.5rem !important;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__offclock-page .page__icon {
+        margin: 0 auto 0.5rem;
+    }
+
+    .about__offclock-page .page__title {
+        font-size: 2rem;
+        /* Reduce from 3rem */
     }
 
     .offclock__section {
         padding: 0;
-        margin-bottom: 2rem;
-        /* Standardize section spacing */
+        margin-bottom: 0.5rem;
+        /* Reduced from 2rem to bring sections closer */
         width: 100%;
     }
 
     .offclock__section-header {
-        margin-bottom: 1rem;
-        /* Standardize sub-header spacing */
+        margin-bottom: 0.5rem;
+        /* Reduced from 1rem */
     }
 
     .offclock__section-header h3 {
-        font-size: 1.2rem;
-        /* Slightly larger for readability */
+        font-size: 1rem;
+        /* Reduced from 1.2rem as requested */
     }
 
     /* Fix Tiny Books & Egg Shape Music -> Transform to Horizontal Carousel */
@@ -1118,7 +1197,8 @@ button:disabled {
 
     .offclock__item {
         flex: 0 0 auto !important;
-        width: 130px !important;
+        width: 100px !important;
+        /* Reduced from 130px */
         margin: 0 !important;
         /* Reset all margins */
         height: auto;
@@ -1168,7 +1248,8 @@ button:disabled {
     }
 
     .offclock__item--circle {
-        width: 130px !important;
+        width: 100px !important;
+        /* Reduced from 130px */
         margin: 0 !important;
         border-radius: 4px !important;
         /* CRITICAL: Un-circle the container */
@@ -1246,31 +1327,50 @@ button:disabled {
         margin-bottom: 1rem;
     }
 
-    /* CONTACT COMPACT */
+    /* CONTACT SECTION - FILL SCREEN LEFT, RIGHT, BOTTOM */
+    #contact.about__page.about__cta-page {
+        padding: 2rem 0 0 0 !important;
+        /* TOP only, NO SIDES, NO BOTTOM */
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: none !important;
+        min-height: auto !important;
+        /* Let content determine height */
+        justify-content: flex-start !important;
+        box-sizing: border-box !important;
+    }
+
     .cta__content {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
+        /* Reduced from 1.5rem */
         padding: 0 1rem;
-        /* Add padding here since parent has none */
     }
 
     .cta__content h2 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.4rem;
+        /* Reduced from 1.5rem */
+        margin-bottom: 0.3rem;
+        /* Reduced from 0.5rem */
     }
 
     .cta__content p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        /* Reduced from 0.9rem */
+        margin-bottom: 1rem;
     }
 
     form {
-        gap: 0.8rem;
+        gap: 0.6rem;
+        /* Reduced from 0.8rem */
         width: 100%;
     }
 
-    input,
-    textarea {
-        padding: 0.8rem;
-        font-size: 1rem;
+    .about__cta-page input,
+    .about__cta-page textarea {
+        padding: 0.6rem;
+        /* Reduced from 0.8rem */
+        font-size: 0.95rem;
+        margin-bottom: 0.6rem;
     }
 
     .container.contact__container {
@@ -1278,17 +1378,17 @@ button:disabled {
         padding: 0;
     }
 
-    /* Fix Footer: Color & Width */
-    footer {
-        width: 100%;
-        /* Natural full width */
-        background: var(--color-primary);
-        padding: 2rem 0;
-        margin-top: 2rem;
-        position: static;
-        /* Reset positioning */
-        margin-left: 0;
-        margin-right: 0;
+    /* Fix Footer: Simple 100% width - parent has no side padding now */
+    footer.cta__footer {
+        width: 100% !important;
+        max-width: none !important;
+        position: static !important;
+        left: auto !important;
+        margin: 0 !important;
+        padding: 1.5rem 1rem !important;
+        background: var(--color-primary) !important;
+        box-sizing: border-box !important;
+        transform: none !important;
     }
 
     .footer__socials {

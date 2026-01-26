@@ -111,12 +111,12 @@
                 <use href="#icon-coffee"></use>
             </svg>
         </a>
-        <a href="#activity" title="Activity" aria-label="Activity">
+        <!-- <a href="#activity" title="Activity" aria-label="Activity">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
                 xmlns="http://www.w3.org/2000/svg">
                 <use href="#icon-activity"></use>
             </svg>
-        </a>
+        </a> -->
         <a href="#contact" title="Contact" aria-label="Contact">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
                 xmlns="http://www.w3.org/2000/svg">
@@ -287,7 +287,7 @@
         </div>
 
 
-        <div id="activity" class="about__page about__activity-page">
+        <!-- <div id="activity" class="about__page about__activity-page">
             <div class="container">
                 <div class="page__header">
                     <div class="page__icon">
@@ -309,7 +309,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
         <div id="contact" class="about__page about__cta-page">
@@ -428,6 +428,11 @@
         </div>
 
     </section>
+
+    <!-- Footer moved outside section#about for full-width on mobile -->
+    <footer class="cta__footer cta__footer--mobile-fullwidth" style="display: none;">
+        <!-- Duplicate footer hidden by default, shown only on mobile via CSS if needed -->
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
