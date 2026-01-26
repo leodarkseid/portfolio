@@ -1065,29 +1065,33 @@ button:disabled {
     }
 
     /* OFF THE CLOCK COMPACT */
+    .about__offclock-page {
+        padding: 4rem 1rem !important;
+        /* Reduce side padding to gain width */
+    }
+
     .about__offclock-page .page__header {
-        margin-bottom: 3rem !important;
-        /* Ample space before Reafing/Content */
+        margin-bottom: 2rem !important;
+        /* Standardize header spacing */
     }
 
     .offclock__section {
-        padding: 0.5rem;
-        margin-bottom: 3rem;
-        /* Increased for ample space */
+        padding: 0;
+        margin-bottom: 2rem;
+        /* Standardize section spacing */
         width: 100%;
     }
 
     .offclock__section-header {
-        margin-bottom: 1.5rem;
-        /* Increased spacing */
+        margin-bottom: 1rem;
+        /* Standardize sub-header spacing */
     }
 
     .offclock__section-header h3 {
-        font-size: 0.85rem;
-        /* Reduced to make books look bigger */
+        font-size: 1.2rem;
+        /* Slightly larger for readability */
     }
 
-    /* Fix Tiny Books & Egg Shape Music */
     /* Fix Tiny Books & Egg Shape Music -> Transform to Horizontal Carousel */
     .offclock__stack {
         height: auto !important;
@@ -1122,7 +1126,8 @@ button:disabled {
         /* CRITICAL: Override desktop 3/4 ratio to match image height */
         scroll-snap-align: center;
         transform: none !important;
-        /* background removal line was commented out, so it defaults to desktop gradient? */
+        background: transparent !important;
+        /* CRITICAL: Remove brown protrusion */
         /* Remove brown protrusion handled by overflow hidden */
         box-shadow: none !important;
     }
@@ -1186,7 +1191,7 @@ button:disabled {
     /* Favorites Stack */
     .offclock__favorites {
         flex-direction: column !important;
-        gap: 0.8rem;
+        gap: 1rem;
         width: 100%;
         align-items: center;
     }
@@ -1194,10 +1199,13 @@ button:disabled {
     .favorite__card {
         padding: 0.8rem 1rem;
         width: 100%;
-        max-width: 400px;
+        max-width: 100%;
+        /* CRITICAL: Prevent overflow on small screens */
         display: flex;
         align-items: center;
         justify-content: space-between;
+        box-sizing: border-box;
+        /* Ensure padding doesn't add to width */
     }
 
     .favorite__card h4 {
