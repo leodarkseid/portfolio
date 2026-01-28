@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap Location (Replace with your actual domain)
-# Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://badmuskolade.com/sitemap.xml
